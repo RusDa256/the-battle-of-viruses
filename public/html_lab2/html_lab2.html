@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title> game </title>
+        <link rel="stylesheet"  href="./../css/css_lab2.css">
+	</head>
+<body bgcolor="#fdfad0" style="margin:5% 5% 5% 5%"> 
+<div class = "tableofgame">
+    <table id = "first_table">
+        <tr>
+            <th></th>
+            <th>1</th><th>2</th>
+            <th>3</th><th>4</th>
+            <th>5</th><th>6</th>
+            <th>7</th><th>8</th>
+            <th>9</th><th>10</th>
+        </tr> 
+            <tr><td>1</td><td class = "cell" id = "11">_</td><td class = "cell" id = "12">_</td><td class = "cell" id = "13">_</td><td class = "cell" id = "14">_</td><td class = "cell" id = "15">_</td><td class = "cell" id = "16">_</td><td class = "cell" id = "17">_</td><td class = "cell" id = "18">_</td><td class = "cell" id = "19">_</td><td class = "cell" id = "20">_</td></tr>
+            <tr><td>2</td><td class = "cell" id = "21">_</td><td class = "cell" id = "22">_</td><td class = "cell" id = "23">_</td><td class = "cell" id = "24">_</td><td class = "cell" id = "25">_</td><td class = "cell" id = "26">_</td><td class = "cell" id = "27">_</td><td class = "cell" id = "28">_</td><td class = "cell" id = "29">_</td><td class = "cell" id = "30">_</td></tr>
+            <tr><td>3</td><td class = "cell" id = "31">_</td><td class = "cell" id = "32">_</td><td class = "cell" id = "33">_</td><td class = "cell" id = "34">_</td><td class = "cell" id = "35">_</td><td class = "cell" id = "36">_</td><td class = "cell" id = "37">_</td><td class = "cell" id = "38">_</td><td class = "cell" id = "39">_</td><td class = "cell" id = "40">_</td></tr>
+            <tr><td>4</td><td class = "cell" id = "41">_</td><td class = "cell" id = "42">_</td><td class = "cell" id = "43">_</td><td class = "cell" id = "44">_</td><td class = "cell" id = "45">_</td><td class = "cell" id = "46">_</td><td class = "cell" id = "47">_</td><td class = "cell" id = "48">_</td><td class = "cell" id = "49">_</td><td class = "cell" id = "50">_</td></tr>
+            <tr><td>5</td><td class = "cell" id = "51">_</td><td class = "cell" id = "52">_</td><td class = "cell" id = "53">_</td><td class = "cell" id = "54">_</td><td class = "cell" id = "55">_</td><td class = "cell" id = "56">_</td><td class = "cell" id = "57">_</td><td class = "cell" id = "58">_</td><td class = "cell" id = "59">_</td><td class = "cell" id = "60">_</td></tr>
+            <tr><td>6</td><td class = "cell" id = "61">_</td><td class = "cell" id = "62">_</td><td class = "cell" id = "63">_</td><td class = "cell" id = "64">_</td><td class = "cell" id = "65">_</td><td class = "cell" id = "66">_</td><td class = "cell" id = "67">_</td><td class = "cell" id = "68">_</td><td class = "cell" id = "69">_</td><td class = "cell" id = "70">_</td></tr>
+            <tr><td>7</td><td class = "cell" id = "71">_</td><td class = "cell" id = "72">_</td><td class = "cell" id = "73">_</td><td class = "cell" id = "74">_</td><td class = "cell" id = "75">_</td><td class = "cell" id = "76">_</td><td class = "cell" id = "77">_</td><td class = "cell" id = "78">_</td><td class = "cell" id = "79">_</td><td class = "cell" id = "80">_</td></tr>
+            <tr><td>8</td><td class = "cell" id = "81">_</td><td class = "cell" id = "82">_</td><td class = "cell" id = "83">_</td><td class = "cell" id = "84">_</td><td class = "cell" id = "85">_</td><td class = "cell" id = "86">_</td><td class = "cell" id = "87">_</td><td class = "cell" id = "88">_</td><td class = "cell" id = "89">_</td><td class = "cell" id = "90">_</td></tr>
+            <tr><td>9</td><td class = "cell" id = "91">_</td><td class = "cell" id = "92">_</td><td class = "cell" id = "93">_</td><td class = "cell" id = "94">_</td><td class = "cell" id = "95">_</td><td class = "cell" id = "96">_</td><td class = "cell" id = "97">_</td><td class = "cell" id = "98">_</td><td class = "cell" id = "99">_</td><td class = "cell" id = "100">_</td></tr>
+            <tr><td>10</td><td class = "cell" id = "101">_</td><td class = "cell" id = "102">_</td><td class = "cell" id = "103">_</td><td class = "cell" id = "104">_</td><td class = "cell" id = "105">_</td><td class = "cell" id = "106">_</td><td class = "cell" id = "107">_</td><td class = "cell" id = "108">_</td><td class = "cell" id = "109">_</td><td class = "cell" id = "110">_</td></tr>
+    </table>
+
+</div>
+<div>
+    <table id = "info_table">
+        <caption>Информация для игрока</caption>
+        <tr><td id = "cur_step">Ходит: </td></tr>
+        <tr><td id = "step_left">Осталось ходов: </td></tr>
+        <tr><td id = "colony_left_X">Живых колоний (X): </td></tr>
+        <tr><td id = "colony_left_O">Живых колоний (O): </td></tr>
+ 
+    </table>
+</div>
+<p><input type="button" id = "skip_step" value=" Пропустить ход "></p>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="./../js/script.js"></script>
+</body>
+
+</html>
